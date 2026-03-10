@@ -16,7 +16,7 @@ void main(){
             numAns = sc.nextInt();
 
             if (numAns < numSus) {
-                System.out.println("Near Be!!");
+                System.out.println("Lower Num!!");
                 count++;
             } else if (numAns > numSus) {
                 System.out.println("Too Much!!");
