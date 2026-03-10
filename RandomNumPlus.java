@@ -8,6 +8,8 @@ void main(){
 
         int numAns = 0;
         int numSus = rand.nextInt(100) + 1;
+        int count = 0;
+        int score = 100;
 
         while (numAns != numSus) {
             System.out.print("Input Number : ");
@@ -15,10 +17,15 @@ void main(){
 
             if (numAns < numSus) {
                 System.out.println("Near Be!!");
+                count++;
             } else if (numAns > numSus) {
                 System.out.println("Too Much!!");
+                count++;
             }
         }
+        
+        System.out.println("SuccessFull ");
+        System.out.println("Your Score is : " +(score-count));
 
-        System.out.println("SuccessFull");
+
     }
